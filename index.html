@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Organizador de Estudos · GMF</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><b>Organizador de Estudos · GMF</b><span id="sync">Carregando…</span></div>
+  <input id="q" type="search" placeholder="Buscar assuntos e arquivos" aria-label="Buscar">
+  <button class="ghost" data-a="refresh">Atualizar</button>
+</header>
+<div class="shell">
+  <aside id="side" aria-label="Semestres e cadeiras"></aside>
+  <main id="main"></main>
+</div>
+<dialog id="dlg"><form method="dialog" id="frm"></form></dialog>
+<input type="file" id="up" multiple hidden>
+<script src="app.js"></script>
+</body>
+</html>
